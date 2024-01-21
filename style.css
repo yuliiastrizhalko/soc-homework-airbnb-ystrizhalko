@@ -1,0 +1,354 @@
+* {
+    max-width: 100%;
+}
+
+body {
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+    font-size: 14px;
+    line-height: 1.43;
+    color: #222;
+    background-color: #fff;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+    display: block;
+}
+
+p {
+    margin: 0;
+}
+
+/*Container*/
+.wrapper {
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+/* Styles for the header section */
+header {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    background-color: #fff;
+}
+
+/* Styles for the search and filter div */
+.search {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 24px 0;
+}
+
+.anywhere,
+.filter {
+    display: flex;
+    align-items: center;
+}
+
+.filter {
+    justify-content: center;
+    margin: auto;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+}
+
+.anywhere {
+    width: 304px;
+    height: 46px; 
+    padding: 4px;
+    border-radius: 50px;
+    box-shadow: 0px 2px 10px #ccc;
+    margin: 0 10px;
+}
+
+.anywhere-text {
+    flex-direction: column;
+}
+
+.anywhere-text>p:first-child, 
+.block-text>span:first-child,
+.block-text>p>span
+{
+    font-weight: bold;
+}
+
+
+.anywhere>span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 52px;
+    height: 20px;
+}
+
+/* Styles for the menu section */
+.menu {
+    margin: 15px auto 0;
+    overflow-x: scroll;
+    white-space: nowrap;
+    scrollbar-width: none;
+    padding: 0;
+    border-bottom: 2px solid rgba(34, 34, 34, 0.212);
+}
+
+.menu::-webkit-scrollbar {
+    width: 0;
+    display: none;
+}
+
+.categories {
+    width: 90px;
+    text-align: center;
+    max-height: 150px;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.categories img {
+    display: block;
+    width: 24px;
+    margin: auto;
+}
+
+.categories>span{
+    display: block;
+    margin: 5px auto;
+    font-size: 11px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Styles for the main content section */
+main {
+    margin: 140px 0 0;
+}
+
+.accommodation-card {
+    margin: 24px auto;
+    padding: 0 24px;
+}
+
+.accommodation-photo {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.img-block {
+    position: relative;
+}
+
+.accommodation-photo>a>img {
+    border-radius: 10px;
+}
+
+.heart {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.block-text {
+    font-size: 15px;
+    margin: 8px 0px;
+    font-weight: 100;
+    position: relative;
+}
+
+.block-text>p {
+    text-decoration: underline;
+    margin: 5px 0px;
+}
+
+.guest-f {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    width: 120px;
+    height: 20px; 
+    padding: 3px 0 2px;
+    border-radius: 50px;
+    background: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: 500;
+}
+
+.star {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.star>span {
+    padding: 3px 5px 0;
+}
+
+footer {
+    padding: 20px;
+    background-color: rgb(247, 239, 239);
+}
+
+
+button,
+button:active,
+button:focus  {
+  border:none;
+  background-color: rgb(247, 239, 239);
+}
+
+.button {
+    margin: 15px auto 0;
+    overflow-x: scroll;
+    white-space: nowrap;
+    scrollbar-width: none;
+    padding: 0;
+    /* border-bottom: 2px solid rgba(34, 34, 34, 0.212); */
+}
+
+.button::-webkit-scrollbar {
+    width: 0;
+    display: none;
+}
+
+.towns {
+    display: flex;
+    padding: 15px 0px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid rgb(197, 187, 187);
+}
+
+.colum-1,
+.colum-2 {
+    width: 50%;
+    font-weight: bold;
+}
+
+
+.colum-2>p:last-of-type {
+    float: left;
+}
+
+.sign {
+    display: inline-block;
+    padding: 0 0 0 5px;
+}
+
+.townsplus {
+    font-weight: 100;
+    display: block;
+}
+
+.towns>p {
+    font-weight: bold;
+}
+
+/* .support>p:first-child {
+    font-weight: 500;
+}
+
+.support>li>a {
+    text-decoration: none;
+} */
+
+.support a {
+    text-decoration: none;
+    color: inherit; 
+}
+
+.support ul {
+    list-style: none;
+    padding: 1px 0px;
+}
+
+.support>ul>li {
+    padding: 4px 0px; 
+}
+
+.support p {
+    font-weight: bold; 
+}
+
+.support {
+    padding: 0 0 0 5px;
+    border-bottom: 2px solid rgb(197, 187, 187);
+}
+.hosting {
+    padding: 0 0 0 5px;
+    border-bottom: 2px solid rgb(197, 187, 187);
+    margin-top: 10px;
+}
+
+.hosting a {
+    text-decoration: none;
+    color: inherit; 
+}
+
+.hosting ul {
+    list-style: none;
+    padding: 1px 0px;
+}
+
+.hosting>ul>li {
+    padding: 4px 0px; 
+}
+
+.hosting p {
+    font-weight: bold; 
+}
+
+.airbnb{
+    /* margin-top: 10px; */
+    padding: 0 0 0 5px;
+    border-bottom: 2px solid rgb(197, 187, 187);
+    margin-top: 10px;
+}
+
+.airbnb p {
+    font-weight: bold; 
+}
+.airbnb a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.airbnb ul {
+    list-style: none;
+    padding: 1px 0px;
+}
+
+.airbnb>ul>li {
+    padding: 4px 0px;
+}
+
+.navigation-down {
+    position: fixed;
+    background-color: whitesmoke;
+    bottom: 0;
+    z-index: 10;
+    width: 100%;
+}
+
+.nav-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation-menu {
+    margin: 10px 0;
+    width: 23%;
+    text-align: center;
+}
+
+.navigation-menu>a {
+    display: inline-block;
+    text-align: center;
+}
+
